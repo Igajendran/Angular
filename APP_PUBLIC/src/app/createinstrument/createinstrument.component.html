@@ -1,0 +1,75 @@
+<!-- <form (ngSubmit)="createNewinstrument(newinstrument)"> 
+    <label for="name" >Name</label> 
+    <input [(ngModel)]="newinstrument.name" id="name" name="name" required="required"> 
+    <label for="type" >Color</label> 
+    <input [(ngModel)]="newinstrument.Color" id="type" name="type" required="required"> 
+    <button type="submit">Create</button> 
+  </form>  -->
+
+  <!-- ##### Breadcumb Area Start ##### -->
+  <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(../../assets/img/bg-img/breadcumb.jpg);">
+    <div class="bradcumbContent">
+        <p>Add new Album</p>
+        <h2>New Album</h2>
+    </div>
+</section>
+<!-- ##### Breadcumb Area End ##### -->
+
+
+<!-- ##### Contact Area Start ##### -->
+<section class="contact-area section-padding-0-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- Contact Form Area -->
+                <div class="contact-form-area">
+                    <form (ngSubmit)="createNewinstrument(newinstrument)">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <input [(ngModel)]="newinstrument.name" type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <input [(ngModel)]="newinstrument.Quantity" type="text" class="form-control" id="Quantity" name="Quantity"  placeholder="Quantity">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                   <!-- <select class="form-select" [(ngModel)]="newinstrument.Avaliability"  aria-label="Default select example" name="Avaliability" id="Avaliability">
+                                        <option selected>Open this select menu</option>
+                                        <option value="Yes">Yes</option>
+                                      <option value="No">No</option>
+                                    </select> -->
+                                     <input [(ngModel)]="newinstrument.Color" type="text" class="form-control" id="Color" name="Color"  placeholder="Color">
+                                </div>
+                            </div>
+                            
+                
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn oneMusic-btn mt-30" type="submit">Add New <i class="fa fa-angle-double-right"></i></button>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Contact Area End ##### -->
+
